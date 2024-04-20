@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+}
+
+h1 {
+  color: #fff; /* White heading color */
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-top: 20px;
+  width: 70%;
+  max-width: 400px;
+  border: none; /* Remove border */
+  border-radius: 20px; /* Add border-radius for rounded corners */
+  background-color: #222; /* Dark input background color */
+  color: #fff; /* White input text color */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Add box-shadow for focus effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Adjusted box-shadow color on focus */
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-top: 20px;
+  width: 70%;
+  max-width: 400px;
+  border: 1px solid #444; /* Adjusted border color */
+  background-color: #222; /* Dark input background color */
+  color: #fff; /* White input text color */
+}
+
+.rbord {
+  background: #0c0a0a; /* Dark background color */
+  padding: 20px;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-card {
+  background-color: #000; /* Black card background color */
+  border-radius: 20px; /* Rounded corners like Material UI Android */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted box-shadow color */
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff; /* White text color */
+  width: 100%;
+}
+
+.product-card:hover {
+  background: #ffffff; /* Darker hover background color */
+  transform: scale(1.05);
+}
+.product-card:hover * {
+  filter: invert(100%); /* Invert the colors of all elements inside product-card */
+}
+
+.product-image-home {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #555; /* Adjusted border color */
+}
+
+.product-details-home {
+  padding: 10px;
+}
+
+.product-title-home {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-price-home {
+  font-weight: bold;
+  color: #fff; /* White text color */
+}
+
+.rbord-pro {
+  background: #222; /* Dark background color */
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.product-page {
+  padding: 20px;
+  margin: 20px;
+  background-color: #000; /* Black background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted box-shadow color */
+  margin-bottom: 20px;
+}
+
+.product-details {
+  max-width: 600px;
+  color: #fff; /* White text color */
+  background-color: #151111; /* Black background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(36, 36, 36, 0.1); /* Adjusted box-shadow color */
+}
+
+.product-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff; /* White text color */
+}
+
+.product-price {
+  font-weight: bold;
+  color: #fff; /* White text color */
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+  color: #fff; /* White text color */
+}
+
+.product-rating {
+  color: #fff; /* White text color */
+  margin-bottom: 10px;
+}
+
+.product-heading {
+  font-weight: bold;
+  color: #fff; /* White text color */
+}
+
+.login-container,
+.register-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #000; /* Black background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted box-shadow color */
+}
+
+.login-container h1,
+.register-container h1 {
+  margin-bottom: 30px;
+  color: #fff; /* White heading color */
+  font-size: 2rem;
+}
+
+.login-container form,
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container input,
+.register-container input {
+  margin-bottom: 20px;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #555; /* Adjusted border color */
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #222; /* Dark input background color */
+  color: #fff; /* White input text color */
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus,
+.register-container input:focus {
+  border-color: #fff; /* White focus border color */
+  outline: none;
+}
+
+.login-container button,
+.register-container button,
+.logout-button,
+.button-container .register-link {
+  padding: 12px 24px;
+  background-color: #555; /* Dark button background color */
+  color: #fff; /* White button text color */
+  border: none;
+  border-radius: 20px; /* Rounded button corners */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover,
+.register-container button:hover,
+.logout-button:hover,
+.button-container .register-link:hover {
+  background-color: #777; /* Darker button hover background color */
+}
+
+.login-container a,
+.register-container a {
+  text-decoration: none;
+  color: #fff; /* White link color */
+  font-style: italic;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover,
+.register-container a:hover {
+  color: #ccc; /* Lighter link hover color */
+}
+
+.error-message {
+  color: #ff4d4d; /* Red error message color */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fox-icon {
+  margin-right: 10px;
+  color: #f59e0b; /* Adjust the color as needed */
+}
